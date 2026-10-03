@@ -2,6 +2,7 @@
 
 .wrap {
   width: min(72rem, calc(100% - 1.5rem));
+  min-width: 0;
 }
 
 .page-intro {
@@ -82,6 +83,8 @@ main section {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .viz-col {
@@ -135,6 +138,9 @@ main section {
 }
 
 .table-scroll {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
   overflow: auto;
   overscroll-behavior: contain;
   padding-bottom: 0.35rem;
@@ -540,7 +546,7 @@ legend {
 @media (min-width: 960px) {
   .table-layout {
     display: grid;
-    grid-template-columns: auto minmax(17rem, 24rem);
+    grid-template-columns: minmax(0, 1fr) minmax(16rem, 22rem);
     gap: 1.25rem;
     align-items: start;
   }
