@@ -604,7 +604,7 @@
     li.textContent = daily.explain;
     list.appendChild(li);
     show("adimlar", true);
-    if (!dailyAnswered) setFeedback("Cevap: " + daily.answer + ". " + daily.explain, "soft");
+    if (!dailyAnswered) setFeedback("Cevap: " + daily.answer + ".", "soft");
   }
 
   function onDailyAnswer(choice, btn) {
@@ -629,9 +629,9 @@
       state.gunun.stars = Math.min(3, state.gunun.solved.length);
       save();
       paintStars();
-      setFeedback(pick(PRAISE) + " " + daily.explain, "good");
+      setFeedback(pick(PRAISE), "good");
     } else {
-      setFeedback(pick(GENTLE) + " Doğru cevap: " + daily.answer + ". " + daily.explain, "soft");
+      setFeedback(pick(GENTLE) + " Doğru cevap: " + daily.answer + ".", "soft");
     }
   }
 
