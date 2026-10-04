@@ -1,0 +1,109 @@
+/* Matematik oyunları hub'ı. Yazılar koyu, zemin açık renkli kalır. */
+
+.wrap {
+  width: min(68rem, calc(100% - 1.5rem));
+}
+
+.page-intro {
+  padding-top: 1.1rem;
+}
+
+.page-intro h1 {
+  font-size: clamp(2.1rem, 6vw, 3.3rem);
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  font-weight: 700;
+}
+
+.hub-grid {
+  display: grid;
+  gap: 0.8rem;
+  margin: 1rem 0 0.4rem;
+  padding: 0;
+  list-style: none;
+}
+
+.hub-grid > li {
+  display: flex;
+  min-width: 0;
+}
+
+.hub-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+  flex: 1;
+  min-height: 11rem;
+  padding: 1rem 1.05rem 0.95rem;
+  border-radius: 22px;
+  border: 2px solid transparent;
+  text-decoration: none;
+  color: var(--ink);
+  background: #f8ebe3;
+}
+
+.hub-card:hover {
+  border-color: var(--palm);
+  color: var(--ink);
+}
+
+.hub-mark {
+  width: 3rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: var(--cream);
+  color: var(--palm-deep);
+  font-family: var(--serif);
+  font-size: 1.45rem;
+  margin-bottom: 0.35rem;
+}
+
+.hub-card h2 {
+  margin: 0;
+  font-size: 1.55rem;
+}
+
+.hub-card p {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.hub-stars {
+  margin-top: auto;
+  padding-top: 0.7rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.tint-carpim { background: #f8ebe3; }
+.tint-toplama { background: #e7f2ec; }
+.tint-kesir { background: #f8f1dc; }
+.tint-hedef { background: #efe7f6; }
+.tint-oruntu { background: #e5eef8; }
+.tint-geometri { background: #fde8e4; }
+.tint-gunun { background: #fff6ea; }
+
+@media (min-width: 720px) {
+  .hub-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 980px) {
+  .hub-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (forced-colors: active) {
+  .hub-card {
+    border: 1px solid ButtonText;
+  }
+}

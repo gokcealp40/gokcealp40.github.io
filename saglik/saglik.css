@@ -1,0 +1,56 @@
+/* Nefes dairesi. Hareket, azaltılmış hareket tercihine saygı duyar. */
+
+.nefes {
+  margin-top: 0.8rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 1rem 1rem 1.1rem;
+}
+
+.nefes-sahne {
+  display: grid;
+  place-items: center;
+  min-height: 12rem;
+  margin: 0.4rem 0 0.6rem;
+}
+
+.nefes-daire {
+  width: 8.5rem;
+  height: 8.5rem;
+  border-radius: 50%;
+  background: #e7f2ec;
+  border: 3px solid var(--palm);
+  transform: scale(0.72);
+}
+
+.nefes-daire.calisiyor {
+  animation: nefes-dongu 8s ease-in-out infinite;
+}
+
+@keyframes nefes-dongu {
+  0%,
+  100% {
+    transform: scale(0.72);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+.nefes-yazi {
+  margin: 0 0 0.8rem;
+  font-family: var(--serif);
+  font-size: 1.45rem;
+  text-align: center;
+}
+
+.nefes .btn {
+  width: 100%;
+}
+
+@media (min-width: 560px) {
+  .nefes .btn {
+    width: auto;
+  }
+}

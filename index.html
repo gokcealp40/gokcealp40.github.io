@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="pisagokce'nin kişisel sayfası. Ankara'dan Luanda'ya. Matematik öğretmeni, hukuk fakültesi öğrencisi.">
+  <meta name="theme-color" content="#f3eee4">
+  <meta name="color-scheme" content="light">
+  <title>pisagokce</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,500&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#icerik">İçeriğe geç</a>
+  <div class="wrap">
+    <header class="hero">
+      <nav class="nav" aria-label="Gezinti">
+        <a href="#hakkimda">Hakkımda</a>
+        <a href="#ilgi">İlgi alanlarım</a>
+        <a href="saglik/index.html">Sağlık köşesi</a>
+        <a href="iletisim.html">Özel gereksinimli bireylerle iletişim</a>
+        <a href="hukuk/index.html">Hukuk köşesi</a>
+        <a class="nav-cta" href="oyunlar/index.html">Matematik oyunları</a>
+      </nav>
+
+      <div class="hero-top">
+        <!--
+          Fotoğraf eklemek istersen:
+          1. Fotoğraf dosyasını bu klasöre koy. Adı, örneğin, fotograf.jpg olsun.
+          2. Alttaki <div class="seal">...</div> bloğunun tamamını sil.
+          3. Yerine şunu yapıştır:
+             <img class="portre" src="fotograf.jpg" alt="pisagokce">
+          Bu not sitede görünmez.
+        -->
+        <div class="seal" aria-hidden="true">
+          <svg viewBox="0 0 120 120" focusable="false">
+            <circle cx="60" cy="60" r="52" fill="none" stroke="currentColor" stroke-width="1.2"/>
+            <circle cx="60" cy="60" r="34" fill="none" stroke="#16483a" stroke-width="1"/>
+            <path d="M60 16 L104 96 H16 Z" fill="none" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M60 60 H108" stroke="#8d6b2f" stroke-width="1"/>
+            <circle cx="60" cy="60" r="2.4" fill="currentColor"/>
+          </svg>
+          <span class="seal-letter">π</span>
+        </div>
+
+        <div class="hero-copy">
+          <p class="kicker">Kişisel sayfa</p>
+          <h1>Merhaba, <em>ben pisagokce</em></h1>
+          <p class="roles">Matematik öğretmeni · Hukuk fakültesi öğrencisi</p>
+        </div>
+      </div>
+
+      <p class="lead">Ankara'dan Luanda'ya geldim. Matematik öğretmeniyim, hukuk fakültesinde öğrenciyim. Eylül 2026'dan beri ailemle birlikte Luanda'da yaşıyorum. Bir çocuk annesiyim.</p>
+
+      <div class="yol">
+        <span>Ankara</span>
+        <span class="yol-cizgi" aria-hidden="true"></span>
+        <span>Luanda</span>
+      </div>
+      <p class="yol-alt">Türkiye · Angola</p>
+    </header>
+
+    <main id="icerik">
+      <section id="hakkimda" aria-labelledby="hakkimda-baslik">
+        <h2 id="hakkimda-baslik"><span class="idx" aria-hidden="true">01</span>Hakkımda</h2>
+        <p>Ben pisagokce. Türkiye'de Ankara'da yaşıyordum. Matematik öğretmeniyim.</p>
+        <p>Hukuk fakültesinde öğrenciyim. Eylül 2026'dan beri ailemle birlikte Angola'da yaşıyoruz. Şehrimiz Luanda. Bir çocuk annesiyim.</p>
+        <p>Ankara'dan Luanda'ya bu yol bizim için yeni bir sayfa.</p>
+      </section>
+
+      <hr class="soft">
+
+      <section id="ilgi" aria-labelledby="ilgi-baslik">
+        <h2 id="ilgi-baslik"><span class="idx" aria-hidden="true">02</span>İlgi alanlarım</h2>
+        <p class="section-kicker">Neler yapıyorum</p>
+        <ul class="ilgi-grid">
+          <li>
+            <span class="mark" aria-hidden="true">π</span>
+            <h3>Matematik</h3>
+            <p>Matematik öğretmeniyim.</p>
+          </li>
+          <li>
+            <span class="mark" aria-hidden="true">
+              <svg viewBox="0 0 32 32" focusable="false">
+                <path d="M16 5v21M9 26h14M8 9h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M8 9 5 16h6L8 9zM24 9l-3 7h6L24 9z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <h3>Hukuk</h3>
+            <p>Hukuk fakültesinde öğrenciyim.</p>
+            <p><a href="hukuk/index.html">Hukuk köşesi</a></p>
+          </li>
+          <li>
+            <span class="mark" aria-hidden="true">
+              <svg viewBox="0 0 32 32" focusable="false">
+                <path d="M9 15h14v7a5 5 0 0 1-5 5h-4a5 5 0 0 1-5-5v-7z" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M7 15h18M12 9c.4 1.6 1.2 2.4 1.2 2.4M16 8c.4 1.8 1 2.6 1 2.6M20 9c.3 1.6.9 2.4.9 2.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h3>Yemek yapmak</h3>
+            <p>Yemek yapmayı seviyorum.</p>
+          </li>
+          <li>
+            <span class="mark" aria-hidden="true">?</span>
+            <h3>Soru çözmek</h3>
+            <p>Soru çözmek hoşuma gidiyor.</p>
+          </li>
+          <li>
+            <span class="mark" aria-hidden="true">
+              <svg viewBox="0 0 32 32" focusable="false">
+                <path d="M6 8c3.5-1.6 7-1.6 10 1.2C19 6.4 22.5 6.4 26 8v15c-3.5-1.6-7-1.6-10 1.2-3-2.8-6.5-2.8-10-1.2V8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                <path d="M16 9.2v15" fill="none" stroke="currentColor" stroke-width="1.6"/>
+              </svg>
+            </span>
+            <h3>Kitap okumak</h3>
+            <p>Kitap okumaktan keyif alıyorum.</p>
+          </li>
+          <li>
+            <span class="mark mark-letters" aria-hidden="true">Aa</span>
+            <h3>Dil öğrenmek</h3>
+            <p>Dil öğrenmeyi seviyorum.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="play" aria-labelledby="oyun-baslik">
+        <div class="play-copy">
+          <p class="kicker">Çocuklar için</p>
+          <h2 id="oyun-baslik">Matematik oyunları</h2>
+          <p>7–12 yaş için çarpım tablosu, toplama ve çıkarma, kesirler, hedef sayı, örüntüler, geometri ve günün bulmacası. Amaç matematiği sevdirmek. Skorlar yalnız bu cihazda kalır.</p>
+          <a class="btn" href="oyunlar/index.html">Oyunlara geç</a>
+        </div>
+        <div class="play-dots" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+        </div>
+      </section>
+
+      <section class="kapi-grid" aria-label="Köşeler">
+        <article class="kapi">
+          <p class="kicker">Aileler ve çocuklar</p>
+          <h2>Sağlık köşesi</h2>
+          <p>Uyku, su, dengeli ara öğün, ekran arası, hareket ve sınav öncesi kısa bir nefes. Genel bilgidir; tanı ya da tedavi değildir.</p>
+          <a class="btn" href="saglik/index.html">Köşeye geç</a>
+        </article>
+        <article class="kapi kapi-iletisim">
+          <p class="kicker">Aile, öğretmen, akran</p>
+          <h2>Özel gereksinimli bireylerle iletişim</h2>
+          <p>Sabır, kısa cümle, görsel destek ve matematikte kapsayıcı öğretim için kısa notlar. Sözlükte saygılı ifadeler var.</p>
+          <a class="btn" href="iletisim.html">Sayfaya geç</a>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <!--
+        İletişim yazmak istersen bu notu sil ve altına kısa bir satır ekle.
+        Örnek:
+        <p>İletişim: istediğin kısa not</p>
+        E-posta, telefon veya adres yazmak zorunda değilsin.
+        Yazarsan sayfa herkese açık olur; bunu unutma.
+      -->
+      <p class="footer-name">pisagokce</p>
+      <p>Ankara · Luanda</p>
+      <p><a href="oyunlar/index.html">Matematik oyunları</a></p>
+      <p><a href="saglik/index.html">Sağlık köşesi</a></p>
+      <p><a href="iletisim.html">Özel gereksinimli bireylerle iletişim</a></p>
+      <p><a href="hukuk/index.html">Hukuk köşesi</a></p>
+      <p class="fine">2026</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,802 @@
+/* Görünüm bu dosyada. Yazıları değiştirmek için index.html dosyasına bak. */
+
+:root {
+  --bg: #f3eee4;
+  --card: #fffaf3;
+  --ink: #1c1916;
+  --ink-soft: #3a352f;
+  --muted: #4a453e;
+  --line: #e3d7c4;
+  --terra: #6e2a1f;
+  --palm: #16483a;
+  --palm-deep: #0f3329;
+  --cream: #fffaf3;
+  --gold: #8d6b2f;
+  --wash: #f6e4d8;
+  --good: #e4f0e8;
+  --serif: "Fraunces", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --sans: "Source Sans 3", "Segoe UI", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  background-image: url("motif.svg");
+  background-size: 280px;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1.125rem;
+  line-height: 1.65;
+  overflow-x: clip;
+}
+
+::selection {
+  background: #ead3b0;
+  color: var(--ink);
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--terra);
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: var(--palm);
+}
+
+:focus {
+  outline: 3px solid var(--palm);
+  outline-offset: 3px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.skip {
+  position: absolute;
+  left: 0.75rem;
+  top: -4rem;
+  z-index: 20;
+  background: var(--ink);
+  color: var(--cream);
+  padding: 0.55rem 0.9rem;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.skip:focus {
+  top: 0.75rem;
+}
+
+.wrap {
+  width: min(42rem, calc(100% - 2rem));
+  margin-inline: auto;
+  padding-bottom: 3rem;
+}
+
+.kicker,
+.section-kicker {
+  margin: 0;
+  color: var(--terra);
+  font-weight: 700;
+  font-size: 0.98rem;
+}
+
+.hero {
+  padding: 1.25rem 0 0.5rem;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.85rem;
+  align-items: center;
+  margin: 0 0 1.35rem;
+}
+
+.nav a {
+  color: var(--ink);
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration-thickness: 1px;
+}
+
+.nav a.nav-cta {
+  color: var(--cream);
+  background: var(--palm);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.35rem 0.95rem;
+  border-radius: 999px;
+}
+
+.nav a.nav-cta:hover {
+  color: var(--cream);
+  background: var(--palm-deep);
+}
+
+.sayfa h1 {
+  font-size: clamp(1.9rem, 5.6vw, 3.05rem);
+}
+
+.alt-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.85rem;
+  margin: 0.2rem 0 0.4rem;
+}
+
+.alt-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.uyari {
+  margin: 1rem 0 0;
+  padding: 0.9rem 1rem;
+  background: #f8f1dc;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  color: var(--ink);
+}
+
+.konu-grid {
+  list-style: none;
+  margin: 0.6rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.konu {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 0.95rem 1rem 1rem;
+}
+
+.konu h3 {
+  margin-bottom: 0.35rem;
+}
+
+.konu-genis {
+  grid-column: 1 / -1;
+}
+
+.konu p,
+.konu li {
+  color: var(--ink-soft);
+}
+
+.konu ul,
+.adimlar {
+  margin: 0.35rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.konu li,
+.adimlar li {
+  margin: 0.28rem 0;
+}
+
+.guncel {
+  margin: 0.35rem 0 0;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.hak {
+  margin: 0.2rem 0 0;
+}
+
+.hak > div {
+  padding: 0.55rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.hak dt {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.hak dd {
+  margin: 0.2rem 0 0;
+}
+
+.cetvel {
+  margin-top: 0.7rem;
+  max-width: 100%;
+}
+
+.cetvel table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card);
+  color: var(--ink);
+}
+
+.cetvel caption {
+  margin-bottom: 0.45rem;
+  text-align: left;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.cetvel th,
+.cetvel td {
+  padding: 0.55rem 0.65rem;
+  border: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.cetvel th {
+  background: #f8f1dc;
+  color: var(--ink);
+}
+
+.yolculuk {
+  list-style: none;
+  margin: 0.7rem 0 0;
+  padding: 0;
+  counter-reset: adim;
+}
+
+.yolculuk li {
+  position: relative;
+  margin: 0;
+  padding: 0 0 1.15rem 3.4rem;
+  color: var(--ink-soft);
+}
+
+.yolculuk li::before {
+  content: counter(adim);
+  counter-increment: adim;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--palm);
+  color: var(--cream);
+  font-weight: 700;
+}
+
+.yolculuk li::after {
+  content: "";
+  position: absolute;
+  left: 1.15rem;
+  top: 2.5rem;
+  bottom: 0.15rem;
+  width: 2px;
+  background: var(--line);
+}
+
+.yolculuk li:last-child::after {
+  content: none;
+}
+
+.yolculuk strong {
+  color: var(--ink);
+}
+
+.sss {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 0.7rem;
+}
+
+.sss details {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 0.15rem 0.95rem;
+}
+
+.sss summary {
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  color: var(--ink);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.sss details p {
+  margin: 0 0 0.85rem;
+}
+
+.kaynaklar {
+  margin: 0.5rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.kaynaklar li {
+  margin: 0.4rem 0;
+}
+
+.kapi-grid {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.kapi {
+  background: #e7f2ec;
+  border-radius: 24px;
+  padding: 1.25rem 1.2rem 1.35rem;
+}
+
+.kapi-iletisim {
+  background: #f8ebe3;
+}
+
+.kapi h2 {
+  margin-bottom: 0.35rem;
+}
+
+.kapi p {
+  margin: 0 0 1rem;
+  color: var(--ink-soft);
+}
+
+html.buyuk-yazi {
+  font-size: 125%;
+}
+
+.hero-top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.seal {
+  position: relative;
+  width: 6.25rem;
+  height: 6.25rem;
+  color: var(--terra);
+  display: grid;
+  place-items: center;
+  flex: none;
+}
+
+.seal svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.seal-letter {
+  position: relative;
+  font-family: var(--serif);
+  font-size: 2.35rem;
+  line-height: 1;
+}
+
+.portre {
+  width: 6.5rem;
+  height: 6.5rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--cream);
+  box-shadow: 0 0 0 1.5px var(--line);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--serif);
+  font-weight: 600;
+  line-height: 1.12;
+  text-wrap: balance;
+}
+
+h1 {
+  margin: 0.15rem 0 0.35rem;
+  font-size: clamp(2.5rem, 8vw, 4.15rem);
+  letter-spacing: -0.03em;
+}
+
+h1 em {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--terra);
+}
+
+h2 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+}
+
+h3 {
+  margin: 0 0 0.3rem;
+  font-size: 1.35rem;
+}
+
+.idx {
+  display: block;
+  margin-bottom: 0.2rem;
+  color: var(--terra);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  font-variant-numeric: tabular-nums;
+}
+
+.fullname {
+  margin: 0;
+  font-weight: 700;
+}
+
+.roles {
+  margin: 0.15rem 0 0;
+  color: var(--muted);
+}
+
+.lead {
+  font-size: 1.2rem;
+  color: var(--ink-soft);
+  margin: 0.4rem 0 1rem;
+}
+
+.yol {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-family: var(--serif);
+  font-size: 1.15rem;
+}
+
+.yol-cizgi {
+  flex: 1;
+  max-width: 9rem;
+  height: 2px;
+  background: linear-gradient(90deg, var(--terra), var(--gold), var(--palm));
+}
+
+.yol-alt {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+main section {
+  margin-top: 2.4rem;
+}
+
+.section-kicker {
+  margin-top: -0.35rem;
+  margin-bottom: 1rem;
+}
+
+.ilgi-grid {
+  list-style: none;
+  margin: 0.4rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.ilgi-grid li {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 0.9rem 1rem 1rem;
+}
+
+.ilgi-grid h3 {
+  margin: 0 0 0.2rem;
+}
+
+.ilgi-grid p {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.mark {
+  display: grid;
+  place-items: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-bottom: 0.45rem;
+  color: var(--terra);
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.mark svg {
+  width: 1.7rem;
+  height: 1.7rem;
+  display: block;
+}
+
+.mark-letters {
+  width: auto;
+  font-size: 1.15rem;
+  letter-spacing: -0.03em;
+}
+
+hr.soft {
+  border: 0;
+  height: 2px;
+  width: 4.5rem;
+  margin: 2.2rem 0 0;
+  background: linear-gradient(90deg, var(--terra), var(--gold), var(--palm));
+}
+
+.play {
+  background: var(--palm);
+  color: var(--cream);
+  border-radius: 24px;
+  padding: 1.35rem 1.25rem 1.45rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.play .kicker,
+.play h2,
+.play p {
+  color: var(--cream);
+}
+
+.play .kicker {
+  color: #f6e2c4;
+}
+
+.play p {
+  margin: 0.35rem 0 1rem;
+}
+
+.play .btn {
+  background: var(--cream);
+  color: var(--palm-deep);
+}
+
+.play .btn:hover {
+  background: #fff;
+  color: var(--palm-deep);
+}
+
+.play-dots {
+  display: grid;
+  grid-template-columns: repeat(4, 0.85rem);
+  gap: 0.45rem;
+  align-content: center;
+  justify-content: start;
+  padding: 0.35rem;
+  border: 1.5px solid rgba(255, 250, 243, 0.55);
+  border-radius: 14px;
+  width: max-content;
+  height: max-content;
+}
+
+.play-dots span {
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 50%;
+  background: var(--cream);
+}
+
+.btn,
+button,
+input {
+  font: inherit;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.55rem 1.15rem;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background: var(--palm);
+  color: var(--cream);
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.btn:hover {
+  background: var(--palm-deep);
+  color: var(--cream);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--line);
+}
+
+.btn-ghost:hover {
+  background: var(--card);
+  color: var(--ink);
+}
+
+footer {
+  margin-top: 2.6rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+.footer-name {
+  font-family: var(--serif);
+  color: var(--ink);
+  font-size: 1.25rem;
+}
+
+.fine {
+  font-size: 0.95rem;
+}
+
+.term-list,
+.plain-list {
+  margin: 0.8rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.term-list li,
+.plain-list li {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 0.75rem 0.9rem;
+  margin: 0 0 0.6rem;
+}
+
+.term-list p {
+  margin: 0.2rem 0;
+}
+
+.plain-list li {
+  padding-left: 0.95rem;
+}
+
+.tag {
+  display: inline-block;
+  min-width: 4.2rem;
+  margin-right: 0.45rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.tag-yes {
+  color: var(--palm-deep);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (min-width: 560px) {
+  .ilgi-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 680px) {
+  .hero-top {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .play {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 1.5rem 1.4rem;
+  }
+
+  .kapi-grid,
+  .konu-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 679px) {
+  .cetvel thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+
+  .cetvel table,
+  .cetvel tbody,
+  .cetvel tr,
+  .cetvel td {
+    display: block;
+    width: auto;
+  }
+
+  .cetvel tr {
+    margin: 0 0 0.7rem;
+    padding: 0.35rem 0.75rem 0.65rem;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+  }
+
+  .cetvel td {
+    padding: 0.35rem 0;
+    border: 0;
+  }
+
+  .cetvel td::before {
+    content: attr(data-etiket);
+    display: block;
+    margin-bottom: 0.12rem;
+    color: var(--ink);
+    font-weight: 700;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media (forced-colors: active) {
+  .nav-cta,
+  .btn,
+  .play,
+  .kapi,
+  .uyari,
+  .konu,
+  .cetvel tr,
+  .sss details,
+  .yolculuk li::before {
+    border: 1px solid ButtonText;
+  }
+}
