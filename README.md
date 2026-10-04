@@ -1,6 +1,6 @@
-# Kübra'nın kişisel sayfası
+# pisagokce'nin kişisel sayfası
 
-Bu site Kübra Gökçe Arslan'ın kişisel sayfasıdır. Adres: [https://gokcealp40.github.io](https://gokcealp40.github.io)
+Bu site pisagokce'nin kişisel sayfasıdır. Adres: [https://gokcealp40.github.io](https://gokcealp40.github.io)
 
 Kurulum yok. Program indirmene gerek yok. Sayfa düz HTML ve CSS dosyalarından oluşur.
 

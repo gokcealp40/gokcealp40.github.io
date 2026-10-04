@@ -269,10 +269,6 @@ main section {
   border-left-color: var(--gold);
 }
 
-.thread-aile {
-  border-left-color: var(--palm);
-}
-
 hr.soft {
   border: 0;
   height: 2px;
