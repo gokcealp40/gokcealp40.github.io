@@ -18,11 +18,17 @@ Fotoğraf veya iletişim eklemek istersen `index.html` içinde `<!--` ile başla
 
 ## Oyunlar
 
-Çarpım tablosu oyunları ayrı bir sayfadadır: `oyunlar/index.html`
+Matematik oyunları `oyunlar/index.html` adresindedir. Buradan her oyuna geçilir.
 
-Oradaki açıklama cümlelerini aynı şekilde, dosyayı açıp yazıyı bularak değiştirebilirsin. Oyunların kuralları `oyunlar/mantik.js` ve `oyunlar/oyun.js` içindedir. Yazı değiştirmek için bu iki dosyaya gerek yok.
+Çarpım tablosu oyunları `oyunlar/carpim.html` dosyasındadır. Açıklama cümlelerini dosyayı açıp yazıyı bularak değiştirebilirsin. Bu oyunun kuralları `oyunlar/mantik.js` ve `oyunlar/oyun.js` içindedir.
 
-Yıldızlar ve en iyi skorlar yalnız o anki tarayıcıda durur. Sunucuya gitmez. Başkası kendi cihazında kendi skorunu görür.
+Diğer oyunların kısa yönergeleri kendi html dosyalarındadır: `toplama.html`, `kesir.html`, `hedef.html`, `oruntu.html`, `geometri.html`, `gunun.html`. Ortak kurallar `oyunlar/etkinlik.js` içindedir. Günün bulmacasının soruları da bu dosyadaki listeye yazılır.
+
+Yıldızlar yalnız o anki tarayıcıda durur. Sunucuya gitmez.
+
+## Özel gereksinimli bireylerle iletişim
+
+Bu sayfa `iletisim.html` dosyasındadır. Başlık: Özel Gereksinimli Bireylerle İletişim. Cümleleri oradan değiştirebilirsin. Sözlükte, kullanılmaması gereken eski sözcükler yalnızca “kaçın” örneği olarak durur.
 
 ## Site nasıl yayınlanır?
 

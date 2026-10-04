@@ -1,4 +1,4 @@
-/* Oyunların matematik kuralları. Görünen yazıların çoğu oyunlar/index.html içindedir. */
+/* Çarpım oyunlarının matematik kuralları. Görünen yazıların çoğu oyunlar/carpim.html içindedir. */
 (function (root, factory) {
   var api = factory();
   if (typeof module === "object" && module.exports) {

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Şekil, kenar, çevre ve alan.">
+  <meta name="theme-color" content="#f3eee4">
+  <meta name="color-scheme" content="light">
+  <title>Geometri · Matematik oyunları</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,500&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="sayfa.css">
+</head>
+<body data-oyun="geometri">
+  <a class="skip" href="#icerik">İçeriğe geç</a>
+  <div class="wrap">
+    <header class="page-intro">
+      <a class="back" href="index.html">← Matematik oyunları</a>
+      <p class="kicker">7–12 yaş</p>
+      <h1>Geometri</h1>
+      <p class="lead">Şekli tanı, kenar veya köşe say, çevre ya da alanı bul.</p>
+    </header>
+    <main id="icerik">
+      <noscript><p>Bu oyun için JavaScript açık olmalı. Başka bir şey indirmen gerekmez.</p></noscript>
+      <div class="level" role="group" aria-label="Zorluk">
+        <button type="button" class="chip" data-level="kolay" aria-pressed="true">Kolay</button>
+        <button type="button" class="chip" data-level="orta" aria-pressed="false">Orta</button>
+        <button type="button" class="chip" data-level="zor" aria-pressed="false">Zor</button>
+      </div>
+      <p id="yildiz" class="yildiz" aria-live="polite">Henüz yıldız yok</p>
+      <p id="durum" class="durum"></p>
+      <div id="sahne" class="sahne"></div>
+      <p id="soru" class="prompt"></p>
+      <div id="secenekler" class="choices"></div>
+      <p id="geri" class="feedback" role="status" aria-live="polite"></p>
+      <div class="row-actions">
+        <button type="button" id="sonraki" class="btn" hidden>Sonraki</button>
+        <button type="button" id="geri-al" class="btn btn-ghost" hidden>Geri al</button>
+        <button type="button" id="cozum" class="btn btn-ghost" hidden>Bir çözüm göster</button>
+        <button type="button" id="cevap" class="btn btn-ghost" hidden>Cevabı göster</button>
+        <button type="button" id="yeniden" class="btn btn-ghost" hidden>Yeniden oyna</button>
+      </div>
+      <ol id="adimlar" class="steps" hidden></ol>
+      <p id="storage-note" hidden>Yıldızlar bu tarayıcıda kaydedilemedi.</p>
+    </main>
+    <footer>
+      <p><a href="index.html">Matematik oyunları</a> · <a href="../index.html">pisagokce'nin sayfası</a></p>
+      <p class="fine">pisagokce · 2026</p>
+    </footer>
+  </div>
+  <script src="etkinlik.js"></script>
+  <script src="oyna.js"></script>
+</body>
+</html>

@@ -427,6 +427,43 @@ footer p {
   font-size: 0.95rem;
 }
 
+.term-list,
+.plain-list {
+  margin: 0.8rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.term-list li,
+.plain-list li {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 0.75rem 0.9rem;
+  margin: 0 0 0.6rem;
+}
+
+.term-list p {
+  margin: 0.2rem 0;
+}
+
+.plain-list li {
+  padding-left: 0.95rem;
+}
+
+.tag {
+  display: inline-block;
+  min-width: 4.2rem;
+  margin-right: 0.45rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.tag-yes {
+  color: var(--palm-deep);
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
