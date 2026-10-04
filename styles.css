@@ -200,6 +200,145 @@ a:hover {
   margin: 0.28rem 0;
 }
 
+.guncel {
+  margin: 0.35rem 0 0;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.hak {
+  margin: 0.2rem 0 0;
+}
+
+.hak > div {
+  padding: 0.55rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.hak dt {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.hak dd {
+  margin: 0.2rem 0 0;
+}
+
+.cetvel {
+  margin-top: 0.7rem;
+  max-width: 100%;
+}
+
+.cetvel table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card);
+  color: var(--ink);
+}
+
+.cetvel caption {
+  margin-bottom: 0.45rem;
+  text-align: left;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.cetvel th,
+.cetvel td {
+  padding: 0.55rem 0.65rem;
+  border: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.cetvel th {
+  background: #f8f1dc;
+  color: var(--ink);
+}
+
+.yolculuk {
+  list-style: none;
+  margin: 0.7rem 0 0;
+  padding: 0;
+  counter-reset: adim;
+}
+
+.yolculuk li {
+  position: relative;
+  margin: 0;
+  padding: 0 0 1.15rem 3.4rem;
+  color: var(--ink-soft);
+}
+
+.yolculuk li::before {
+  content: counter(adim);
+  counter-increment: adim;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--palm);
+  color: var(--cream);
+  font-weight: 700;
+}
+
+.yolculuk li::after {
+  content: "";
+  position: absolute;
+  left: 1.15rem;
+  top: 2.5rem;
+  bottom: 0.15rem;
+  width: 2px;
+  background: var(--line);
+}
+
+.yolculuk li:last-child::after {
+  content: none;
+}
+
+.yolculuk strong {
+  color: var(--ink);
+}
+
+.sss {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 0.7rem;
+}
+
+.sss details {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 0.15rem 0.95rem;
+}
+
+.sss summary {
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  color: var(--ink);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.sss details p {
+  margin: 0 0 0.85rem;
+}
+
+.kaynaklar {
+  margin: 0.5rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.kaynaklar li {
+  margin: 0.4rem 0;
+}
+
 .kapi-grid {
   display: grid;
   gap: 0.8rem;
@@ -596,6 +735,45 @@ footer p {
   }
 }
 
+@media (max-width: 679px) {
+  .cetvel thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+
+  .cetvel table,
+  .cetvel tbody,
+  .cetvel tr,
+  .cetvel td {
+    display: block;
+    width: auto;
+  }
+
+  .cetvel tr {
+    margin: 0 0 0.7rem;
+    padding: 0.35rem 0.75rem 0.65rem;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+  }
+
+  .cetvel td {
+    padding: 0.35rem 0;
+    border: 0;
+  }
+
+  .cetvel td::before {
+    content: attr(data-etiket);
+    display: block;
+    margin-bottom: 0.12rem;
+    color: var(--ink);
+    font-weight: 700;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -615,7 +793,10 @@ footer p {
   .play,
   .kapi,
   .uyari,
-  .konu {
+  .konu,
+  .cetvel tr,
+  .sss details,
+  .yolculuk li::before {
     border: 1px solid ButtonText;
   }
 }

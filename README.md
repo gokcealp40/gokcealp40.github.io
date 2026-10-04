@@ -34,6 +34,10 @@ Bu sayfa `saglik/index.html` dosyasındadır. Kartların yazılarını oradan de
 
 Bu sayfa `iletisim.html` dosyasındadır. Başlık: Özel Gereksinimli Bireylerle İletişim. Cümleleri oradan değiştirebilirsin. Sözlükte, kullanılmaması gereken eski sözcükler yalnızca “kaçın” örneği olarak durur. Sayfanın başka yerinde o sözcükleri yeğlenen ifade gibi yazma.
 
+## Hukuk köşesi
+
+Bu sayfa `hukuk/index.html` dosyasındadır. Cümleleri oradan değiştirebilirsin. Her kuralın yanında kanun ve madde numarası durur. Kaynak listesi sayfanın sonundadır. Tutarını resmi metinde görmediğin bir rakamı ekleme.
+
 ## Site nasıl yayınlanır?
 
 Bu depo GitHub Pages sitesidir. `main` dalındaki dosyalar, derleme veya başka bir adım olmadan doğrudan yayınlanır.
