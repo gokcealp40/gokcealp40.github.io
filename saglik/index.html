@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aileler ve çocuklar için sakin bir sağlık köşesi: uyku, su, ekran arası, hareket ve sınav öncesi nefes.">
+  <meta name="theme-color" content="#f3eee4">
+  <meta name="color-scheme" content="light">
+  <title>Sağlık köşesi · pisagokce</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,500&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="saglik.css">
+</head>
+<body>
+  <a class="skip" href="#icerik">İçeriğe geç</a>
+  <div class="wrap sayfa">
+    <header class="hero">
+      <p class="kicker"><a href="../index.html">← pisagokce'nin sayfası</a></p>
+      <h1>Sağlık köşesi</h1>
+      <p class="lead">Aileler ve çocuklar için kısa, sakin notlar. Tanı koymaz, ilaç önermez. Alışkanlıklar yaşa ve güne göre değişir.</p>
+      <p class="uyari" role="note">Buradaki bilgiler genel bilgilendirme amaçlıdır; sağlıkla ilgili kararlar için mutlaka bir sağlık uzmanına danışın.</p>
+      <button type="button" class="btn btn-ghost" id="yazi-boyu" aria-pressed="false">Yazıyı büyüt</button>
+    </header>
+
+    <main id="icerik">
+      <ul class="konu-grid">
+        <li class="konu">
+          <h2>Uyku düzeni</h2>
+          <p>Kalkış ve yatış saati her gün birbirine yakın olsun. Yatmadan önce ışığı azaltın ve ekranı bırakın. Okul çağındaki birçok çocuk için gece uykusu yaklaşık 9–12 saattir. Gençlerde bu süre genellikle biraz daha kısadır. Uyku günlerce bozulursa bir sağlık uzmanına danışın.</p>
+        </li>
+        <li class="konu">
+          <h2>Su ve dengeli ara öğün</h2>
+          <p>Su, gün içinde ulaşılır olsun. Oyun, sıcak hava ve hareketten sonra bir bardak su iyi gelir. Ara öğünde meyve, yoğurt, yumurta ya da tam tahıllı bir dilim düşünülebilir. Bilinen bir alerji varsa o yiyecek durmasın. Ne kadar su gerektiği yaşa ve havaya göre değişir; burada miktar vermiyorum.</p>
+        </li>
+        <li class="konu">
+          <h2>Ekran arası ve göz dinlenmesi</h2>
+          <p>Uzun ekrandan sonra uzağa bakmak gözleri dinlendirir. Yaklaşık 20 dakikada bir, 20 saniye kadar pencereden ya da odanın öteki ucuna bakın. Yatmadan önce ekranı bırakmak uykuya da yardım eder. Süreyi birlikte konuşup sınır koymak, birden yasaklamaktan daha yumuşaktır.</p>
+        </li>
+        <li class="konu">
+          <h2>Ders arasında hareket</h2>
+          <p>Çalışırken ara sıra ayağa kalkın. Omuzları yavaşça çevirin, kolları yukarı uzatın, birkaç adım yürüyün. Ağrı olursa hareketi bırakın. Bu kısa aralar bir spor programının yerini tutmaz. Düzenli hareket için yine bir uzmana sorabilirsiniz.</p>
+        </li>
+        <li class="konu konu-genis" id="nefes">
+          <h2>Sınav kaygısı ve nefes</h2>
+          <p>Sınav öncesi beden gerilebilir. Dört saniye nefes alıp dört saniye vermek bazı çocukların sakinleşmesine yardım eder. İşe yaramazsa bırakın. Kaygı günlerce sürer ya da okula gitmeyi zorlaştırırsa bir sağlık uzmanına danışın.</p>
+          <div class="nefes">
+            <div class="nefes-sahne">
+              <div class="nefes-daire" id="nefes-daire" aria-hidden="true"></div>
+            </div>
+            <p id="nefes-yazi" class="nefes-yazi" aria-live="polite">Hazır olduğunda başla. Daire büyürken nefes al, küçülürken nefes ver.</p>
+            <button type="button" class="btn" id="nefes-basla" aria-pressed="false">Nefese başla</button>
+          </div>
+        </li>
+        <li class="konu konu-genis">
+          <h2>Yeni bir ülkede alışmak</h2>
+          <p>Yeni bir yerde ev, okul ve dil aynı anda değişebilir. Tanıdık bir yatış saati, bildik bir yemek ya da eski bir şarkı güven verir. Özlem, merak ve yorgunluk bir arada olabilir; bu karışık duygular olağandır. Alışmak haftalar ya da aylar sürebilir. Zorlanma artarsa okulun rehber öğretmenine ya da bir sağlık uzmanına danışın.</p>
+        </li>
+      </ul>
+
+      <p class="uyari" role="note">Buradaki bilgiler genel bilgilendirme amaçlıdır; sağlıkla ilgili kararlar için mutlaka bir sağlık uzmanına danışın.</p>
+    </main>
+
+    <footer>
+      <p class="footer-name">pisagokce</p>
+      <p><a href="../index.html">Kişisel sayfa</a> · <a href="../iletisim.html">Özel gereksinimli bireylerle iletişim</a></p>
+      <p class="fine">2026</p>
+    </footer>
+  </div>
+  <script src="../yazi.js"></script>
+  <script src="nefes.js"></script>
+</body>
+</html>

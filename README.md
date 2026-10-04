@@ -26,9 +26,13 @@ Diğer oyunların kısa yönergeleri kendi html dosyalarındadır: `toplama.html
 
 Yıldızlar yalnız o anki tarayıcıda durur. Sunucuya gitmez.
 
+## Sağlık köşesi
+
+Bu sayfa `saglik/index.html` dosyasındadır. Kartların yazılarını oradan değiştirebilirsin. Nefes dairesi `saglik/nefes.js` içindedir. Yazıyı büyütmek için `yazi.js` kullanılır.
+
 ## Özel gereksinimli bireylerle iletişim
 
-Bu sayfa `iletisim.html` dosyasındadır. Başlık: Özel Gereksinimli Bireylerle İletişim. Cümleleri oradan değiştirebilirsin. Sözlükte, kullanılmaması gereken eski sözcükler yalnızca “kaçın” örneği olarak durur.
+Bu sayfa `iletisim.html` dosyasındadır. Başlık: Özel Gereksinimli Bireylerle İletişim. Cümleleri oradan değiştirebilirsin. Sözlükte, kullanılmaması gereken eski sözcükler yalnızca “kaçın” örneği olarak durur. Sayfanın başka yerinde o sözcükleri yeğlenen ifade gibi yazma.
 
 ## Site nasıl yayınlanır?
 

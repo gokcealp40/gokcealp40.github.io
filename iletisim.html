@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Özel gereksinimli bireylerle iletişimde yeğlenen saygılı ifadeler.">
+  <meta name="description" content="Özel gereksinimli bireylerle iletişim: aile, öğretmen ve akranlar için saygılı, kişi odaklı notlar.">
   <meta name="theme-color" content="#f3eee4">
   <meta name="color-scheme" content="light">
   <title>Özel Gereksinimli Bireylerle İletişim · pisagokce</title>
@@ -15,15 +15,129 @@
 </head>
 <body>
   <a class="skip" href="#icerik">İçeriğe geç</a>
-  <div class="wrap">
+  <div class="wrap sayfa">
     <header class="hero">
       <p class="kicker"><a href="index.html">← pisagokce'nin sayfası</a></p>
       <h1>Özel Gereksinimli Bireylerle İletişim</h1>
-      <p class="lead">Kullandığımız sözcükler, karşımızdaki kişiye duyduğumuz saygıyı gösterir. Önce kişiyi görürüm: özel gereksinimli bir birey, çocuk veya öğrenci.</p>
+      <p class="lead">Bu notlar aileler, öğretmenler ve akranlar içindir. Önce kişiyi görürüz: özel gereksinimli bir birey, çocuk veya öğrenci. Herkes aynı değildir. Nasıl anılmak istediğini kendisine sorarız.</p>
+      <p class="uyari" role="note">Buradaki bilgiler genel bilgilendirme amaçlıdır. Özel gereksinimli bir birey için karar verirken mutlaka bir özel eğitim uzmanına ve RAM'a (Rehberlik ve Araştırma Merkezi) danışın.</p>
+      <button type="button" class="btn btn-ghost" id="yazi-boyu" aria-pressed="false">Yazıyı büyüt</button>
+      <nav class="alt-nav" aria-label="Bu sayfada">
+        <a href="#ilkeler">İlkeler</a>
+        <a href="#konular">Konular</a>
+        <a href="#matematik">Matematikte kapsayıcı öğretim</a>
+        <a href="#sozluk">Sözlük</a>
+      </nav>
     </header>
 
     <main id="icerik">
-      <section aria-labelledby="sozluk-baslik">
+      <section id="ilkeler" aria-labelledby="ilkeler-baslik">
+        <h2 id="ilkeler-baslik">İlkeler</h2>
+        <ul class="konu-grid">
+          <li class="konu">
+            <h3>Sabır</h3>
+            <p>Acele ettirmeyin. Cümleyi onun yerine bitirmeyin. Aynı şeyi sakin bir sesle, bir kez daha söylemek yeter.</p>
+          </li>
+          <li class="konu">
+            <h3>Kısa ve açık cümle</h3>
+            <p>Tek istek verin. “Defteri aç, sayfa 12’ye gel, üçüncü soruyu çöz” yerine önce “Defteri aç.” Bitince sonraki adım.</p>
+          </li>
+          <li class="konu">
+            <h3>Göz hizası</h3>
+            <p>Ayakta, yukarıdan konuşmayın. Oturun ya da çömelin. Yüzünüz görünsün. Bağırmak anlatmayı kolaylaştırmaz.</p>
+          </li>
+          <li class="konu">
+            <h3>Cevap için zaman</h3>
+            <p>Sorduktan sonra susun. Sessizliği hemen doldurmayın. On saniye uzun gelebilir; kişi için düşünme payıdır.</p>
+          </li>
+          <li class="konu">
+            <h3>Görsel destek</h3>
+            <p>Söz yetmeyebilir. Resim, numaralı adım, takvim ya da masadaki eşyayı göstermek aynı bilgiyi ikinci bir yoldan verir.</p>
+          </li>
+          <li class="konu">
+            <h3>Etiket yok</h3>
+            <p>Kişiyi bir sözcüğe indirgemeyin. Adını kullanın. Akran olarak da alay etmeyin; oyuna davet edin, zorlamayın.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="konular" aria-labelledby="konular-baslik">
+        <h2 id="konular-baslik">Kısa notlar</h2>
+        <p>Aşağıdakiler her kişi için doğru değildir. İşe yarayan yolu birlikte bulun.</p>
+        <ul class="konu-grid">
+          <li class="konu">
+            <h3>Otizm spektrumundaki birey</h3>
+            <ul>
+              <li>Sözlü olmayan iletişimi de dinleyin: bakış, jest, yazı, kart.</li>
+              <li>Değişiklikten önce haber verin. Sürpriz yorucu olabilir.</li>
+              <li>Mecaz kullanacaksanız ardından ne demek istediğinizi düz söyleyin.</li>
+              <li>Işık ve ses fazla geliyorsa daha sakin bir köşe sunun.</li>
+            </ul>
+          </li>
+          <li class="konu">
+            <h3>DEHB'si olan birey</h3>
+            <p>DEHB, dikkat eksikliği ve hiperaktivite için kullanılan kısa addır.</p>
+            <ul>
+              <li>Bir adım söyleyin, bitince sonrakini verin.</li>
+              <li>Yönergeyi hem söyleyin hem yazın.</li>
+              <li>Kısa bir hareket arası, uzun oturmaktan daha çok iş görür.</li>
+              <li>Dikkati kişiliğine bağlamayın. Görevi küçültün.</li>
+            </ul>
+          </li>
+          <li class="konu">
+            <h3>İşitme yetersizliği olan birey</h3>
+            <ul>
+              <li>Yüze dönük konuşun. Ağzınızı ve yüzünüzü kapatmayın.</li>
+              <li>Bağırmayın. Net ve olağan bir ses yeter.</li>
+              <li>Önemli bilgiyi yazın.</li>
+              <li>İşaret dili kullanılıyorsa bakışınız kişiye olsun, yanındaki çeviriye değil.</li>
+            </ul>
+          </li>
+          <li class="konu">
+            <h3>Görme yetersizliği olan birey</h3>
+            <ul>
+              <li>Yaklaşırken adınızı söyleyin.</li>
+              <li>“Şurada” demek yerine “solunda, masa hizasında” gibi tarif edin.</li>
+              <li>Odadaki bir değişiklik varsa haber verin.</li>
+              <li>Yazıyı hangi biçimde istediğini sorun: büyük punto, ses ya da kabartma.</li>
+            </ul>
+          </li>
+          <li class="konu">
+            <h3>Down sendromu olan birey</h3>
+            <ul>
+              <li>Yaşına uygun konuşun. Bebek gibi bir ses kullanmayın.</li>
+              <li>Kısa cümle kurun ve cevap için bekleyin.</li>
+              <li>Yapabildiği işi onun yerine tamamlamayın.</li>
+              <li>Somut bir örnek, uzun açıklamadan daha açık olur.</li>
+            </ul>
+          </li>
+          <li class="konu">
+            <h3>Öğrenme güçlüğü olan öğrenci</h3>
+            <p>Diskalkuli, matematik öğrenmede güçlük yaşayan öğrenciler için kullanılan addır. Hata, kişinin değeri değildir.</p>
+            <ul>
+              <li>Az soru, aynı beceri. Süre baskısını azaltın.</li>
+              <li>Adımları tahtada numaralayın ve silmeden bırakın.</li>
+              <li>Boncuk, onluk taban ya da kesir çubuğu ile dokunarak çalışın.</li>
+              <li>Doğru yolu kendi cümlesiyle tekrar etmesine zaman verin.</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section id="matematik" aria-labelledby="matematik-baslik">
+        <h2 id="matematik-baslik">Matematikte kapsayıcı öğretim</h2>
+        <p>Hedef aynı kalabilir. Yol değişir. Özel gereksinimli bir öğrenci de matematiği sevebilir.</p>
+        <ol class="adimlar">
+          <li>Somut malzeme çıkarın. 7 × 8 için sekizerli dizilmiş noktalar, 1/2 için iki eşit dilim.</li>
+          <li>Görsel adımlar yazın: 1 topla, 2 grupla, 3 sonucu söyle. Bir adımı bitirmeden sonrakine geçmeyin.</li>
+          <li>Çok duyulu çalışın. Siz söyleyin, o göstersin, malzemeye dokunsun, sonra kendi sözüyle anlatsın.</li>
+          <li>Cevap biçimini açın. Sözlü yerine çizerek, kart seçerek ya da malzemeyi göstererek de olur.</li>
+          <li>Yanlışta kişiyi düzeltmeyin. “Bir adım geri gelelim” deyin ve o adımı birlikte yeniden kurun.</li>
+          <li>Değerlendirmede ek süre ya da daha az soru kullanın. Ölçülen şey hız değil, beceri olsun.</li>
+        </ol>
+      </section>
+
+      <section id="sozluk" aria-labelledby="sozluk-baslik">
         <h2 id="sozluk-baslik">Sözlük</h2>
         <p>Soldaki ifadelere yer vermem. Sağdakileri yeğlerim. Eski sözcükler yalnızca kaçınılacak örnek olarak burada durur.</p>
         <!--
@@ -52,38 +166,31 @@
             <p><span class="tag tag-yes">Yeğle</span> özel gereksinimli birey</p>
           </li>
         </ul>
-      </section>
-
-      <section aria-labelledby="yeglenen-baslik">
-        <h2 id="yeglenen-baslik">Yeğlediğim ifadeler</h2>
+        <h3>Yeğlediğim ifadeler</h3>
         <ul class="plain-list">
           <li>özel gereksinimli birey</li>
           <li>özel gereksinimli çocuk</li>
           <li>özel gereksinimli öğrenci</li>
           <li>tipik gelişim gösteren çocuk</li>
           <li>otizmli birey / otizm spektrumundaki birey</li>
+          <li>DEHB'si olan birey</li>
           <li>işitme yetersizliği olan birey</li>
           <li>görme yetersizliği olan birey</li>
+          <li>Down sendromu olan birey</li>
+          <li>öğrenme güçlüğü olan öğrenci</li>
+          <li>diskalkulisi olan öğrenci</li>
         </ul>
       </section>
 
-      <section aria-labelledby="konusma-baslik">
-        <h2 id="konusma-baslik">Konuşurken</h2>
-        <ul class="plain-list">
-          <li>Kişinin adını kullanırım.</li>
-          <li>Kişiyle konuşurum. Yanındaki birine, kişi orada yokmuş gibi onun hakkında konuşmam.</li>
-          <li>Nasıl anılmak istediğini sorarım. Herkesin yeğlediği sözcük aynı olmayabilir.</li>
-          <li>Cevap için zaman bırakırım.</li>
-          <li>Özel gereksinimli bir çocukla veya öğrencimle konuşurken de aynı saygıyı gösteririm.</li>
-        </ul>
-      </section>
+      <p class="uyari" role="note">Buradaki bilgiler genel bilgilendirme amaçlıdır. Özel gereksinimli bir birey için karar verirken mutlaka bir özel eğitim uzmanına ve RAM'a (Rehberlik ve Araştırma Merkezi) danışın.</p>
     </main>
 
     <footer>
       <p class="footer-name">pisagokce</p>
-      <p><a href="index.html">Kişisel sayfa</a></p>
+      <p><a href="index.html">Kişisel sayfa</a> · <a href="saglik/index.html">Sağlık köşesi</a></p>
       <p class="fine">2026</p>
     </footer>
   </div>
+  <script src="yazi.js"></script>
 </body>
 </html>
